@@ -8,27 +8,29 @@
 </head>
 <body>
     <h1 class="header">Expense Tracker</h1>
-    <div class="input-section">
-        <div>
-            <label for="category-select">Category</label>
-            <select id="category-select">
-                <option value="Food & Beverage">Food & Beverage</option>
-                <option value="Rent">Rent</option>
-                <option value="Transportation">Transportation</option>
-                <option value="Commodities">Commodities</option>
-            </select>
+    <div class="top">
+        <div class="input-section">
+            <div class="category">
+                <label for="category-select">Category</label>
+                <select id="category-select">
+                    <option value="Food & Beverage">Food & Beverage</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Commodities">Commodities</option>
+                </select>
+            </div>
+            <div class="amount">
+                <label for="amount-input">Amount</label>
+                <input type="number" id="amount-input">
+            </div>
+            <div clas="date">
+                <label for="date-input">Date: </label>
+                <input type="date" name="date-input" id="date-input">
+            </div>
         </div>
-        <div>
-            <label for="amount-input">Amount</label>
-            <input type="number" id="amount-input">
-        </div>
-        <div>
-            <label for="date-input">Date: </label>
-            <input type="date" name="date-input" id="date-input">
-        </div>
-        
         <button id="add-btn">Add</button>
     </div>
+
     <div class="chart-wrapper">
         <div class="chart">
             <canvas id="chart"></canvas>
